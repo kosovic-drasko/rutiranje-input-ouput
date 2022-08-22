@@ -4,73 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cde7d2fa-3326-4c7e-a5df-4bfd85e8bbb0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.jhipster/Postupci.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jhipster/Tenderi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rutiranje/domain/Postupci.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rutiranje/domain/Tenderi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rutiranje/repository/PostupciRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rutiranje/repository/TenderiRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rutiranje/service/PostupciQueryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rutiranje/service/PostupciService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rutiranje/service/criteria/PostupciCriteria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rutiranje/web/rest/PostupciResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rutiranje/web/rest/TenderiResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/20220822202946_added_entity_Tenderi.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/20220822203845_added_entity_Postupci.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/fake-data/postupci.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/fake-data/tenderi.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/delete/postupci-delete-dialog.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/delete/postupci-delete-dialog.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/delete/postupci-delete-dialog.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/detail/postupci-detail.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/detail/postupci-detail.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/detail/postupci-detail.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/list/postupci.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/list/postupci.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/list/postupci.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/postupci.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/postupci.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/route/postupci-routing-resolve.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/route/postupci-routing-resolve.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/route/postupci-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/service/postupci.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/service/postupci.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/update/postupci-update.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/update/postupci-update.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/update/postupci-update.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi/detail/tenderi-detail.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi/detail/tenderi-detail.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi/detail/tenderi-detail.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi/list/tenderi.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi/list/tenderi.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi/list/tenderi.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi/route/tenderi-routing-resolve.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi/route/tenderi-routing-resolve.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi/route/tenderi-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi/service/tenderi.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi/service/tenderi.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi/tenderi.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi/tenderi.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/postupci.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/tenderi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/postupci.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/tenderi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/rutiranje/domain/PostupciTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/rutiranje/domain/TenderiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/rutiranje/web/rest/PostupciResourceIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/rutiranje/web/rest/TenderiResourceIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="cde7d2fa-3326-4c7e-a5df-4bfd85e8bbb0" name="Changes" comment="init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yo-rc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.yo-rc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rutiranje/config/CacheConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rutiranje/config/CacheConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/liquibase/master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/master.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/entity-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/entity-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/global.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/sr/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/global.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +40,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -114,7 +55,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.JhipsterApp">
+  <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
@@ -144,8 +85,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661199318505</updated>
-      <workItem from="1661199321023" duration="1826000" />
+      <workItem from="1661199321023" duration="2570000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1661201284444</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661201284444</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init">
+      <created>1661201383840</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661201383840</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,5 +120,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>
