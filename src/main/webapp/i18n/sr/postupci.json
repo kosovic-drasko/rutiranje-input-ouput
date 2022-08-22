@@ -1,0 +1,25 @@
+{
+  "jhipsterApp": {
+    "postupci": {
+      "home": {
+        "title": "Postupcis",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Kreiraj novi Postupci",
+        "createOrEditLabel": "Kreirajte ili izmenite Postupci",
+        "notFound": "No Postupcis found"
+      },
+      "created": "Kreiran je novi Postupci pod nazivom {{ param }}",
+      "updated": "Postupci pod nazivom {{ param }} je ažuriran",
+      "deleted": "Postupci pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Postupci pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Postupci"
+      },
+      "id": "ID",
+      "sifraPostupka": "Sifra Postupka",
+      "opis": "Opis"
+    }
+  }
+}

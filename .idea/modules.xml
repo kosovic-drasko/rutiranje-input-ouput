@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/rutiranje-input-ouput.iml" filepath="$PROJECT_DIR$/rutiranje-input-ouput.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jhipster.iml" filepath="$PROJECT_DIR$/jhipster.iml" />
     </modules>
   </component>
 </project>

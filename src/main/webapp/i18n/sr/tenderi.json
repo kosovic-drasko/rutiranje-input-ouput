@@ -1,0 +1,15 @@
+{
+  "jhipsterApp": {
+    "tenderi": {
+      "home": {
+        "title": "Tenderis",
+        "refreshListLabel": "Refresh list",
+        "notFound": "No Tenderis found"
+      },
+      "detail": {
+        "title": "Tenderi"
+      },
+      "id": "ID"
+    }
+  }
+}

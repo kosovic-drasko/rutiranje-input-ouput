@@ -1,0 +1,51 @@
+<div>
+  <h2 id="page-heading" data-cy="TenderiHeading">
+    <span jhiTranslate="jhipsterApp.tenderi.home.title">Tenderis</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="loadAll()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="jhipsterApp.tenderi.home.refreshListLabel">Refresh List</span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="tenderis?.length === 0">
+    <span jhiTranslate="jhipsterApp.tenderi.home.notFound">No tenderis found</span>
+  </div>
+
+  <div class="table-responsive" id="entities" *ngIf="tenderis && tenderis.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr>
+          <th scope="col"><span jhiTranslate="global.field.id">ID</span></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tenderi of tenderis; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/tenderi', tenderi.id, 'view']">{{ tenderi.id }}</a>
+          </td>
+          <td class="text-end">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/tenderi', tenderi.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
