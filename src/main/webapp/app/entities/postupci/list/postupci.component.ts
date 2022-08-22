@@ -54,7 +54,7 @@ export class PostupciComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.handleNavigation();
+    this.loadPage();
   }
 
   trackId(_index: number, item: IPostupci): number {
@@ -84,7 +84,7 @@ export class PostupciComponent implements OnInit {
     combineLatest([this.activatedRoute.data, this.activatedRoute.queryParamMap]).subscribe(([data, params]) => {
       const page = params.get('page');
       const pageNumber = +(page ?? 1);
-      const sort = (params.get(SORT) ?? data['defaultSort']).split(',');
+      const sort = params.get(SORT) ?? data['defaultSort'];
       const predicate = sort[0];
       const ascending = sort[1] === ASC;
       if (pageNumber !== this.page || predicate !== this.predicate || ascending !== this.ascending) {
