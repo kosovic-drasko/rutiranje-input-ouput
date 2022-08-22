@@ -1,51 +1,31 @@
-<div>
-  <h2 id="page-heading" data-cy="TenderiHeading">
-    <span jhiTranslate="jhipsterApp.tenderi.home.title">Tenderis</span>
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+  <li [ngbNavItem]="1">
+    <a ngbNavLink>One</a>
+    <ng-template ngbNavContent>
+      <jhi-ponude></jhi-ponude>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="2">
+    <a ngbNavLink>Two</a>
+    <ng-template ngbNavContent>
+      <jhi-specifikacije></jhi-specifikacije>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="3">
+    <a ngbNavLink>Three</a>
+    <ng-template ngbNavContent>
+      <p>
+        Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi. Donec egestas ligula
+        vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio. Duis pharetra et nisl at faucibus.
+        Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna, egestas ut ipsum vel, volutpat volutpat neque. Praesent
+        fringilla tortor arcu. Vivamus faucibus nisl enim, nec tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio.
+        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet
+        ultricies in eget neque. Phasellus nec tortor vel tellus pulvinar feugiat.
+      </p>
+    </ng-template>
+  </li>
+</ul>
 
-    <div class="d-flex justify-content-end">
-      <button class="btn btn-info me-2" (click)="loadAll()" [disabled]="isLoading">
-        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
-        <span jhiTranslate="jhipsterApp.tenderi.home.refreshListLabel">Refresh List</span>
-      </button>
-    </div>
-  </h2>
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
 
-  <jhi-alert-error></jhi-alert-error>
-
-  <jhi-alert></jhi-alert>
-
-  <div class="alert alert-warning" id="no-result" *ngIf="tenderis?.length === 0">
-    <span jhiTranslate="jhipsterApp.tenderi.home.notFound">No tenderis found</span>
-  </div>
-
-  <div class="table-responsive" id="entities" *ngIf="tenderis && tenderis.length > 0">
-    <table class="table table-striped" aria-describedby="page-heading">
-      <thead>
-        <tr>
-          <th scope="col"><span jhiTranslate="global.field.id">ID</span></th>
-          <th scope="col"></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let tenderi of tenderis; trackBy: trackId" data-cy="entityTable">
-          <td>
-            <a [routerLink]="['/tenderi', tenderi.id, 'view']">{{ tenderi.id }}</a>
-          </td>
-          <td class="text-end">
-            <div class="btn-group">
-              <button
-                type="submit"
-                [routerLink]="['/tenderi', tenderi.id, 'view']"
-                class="btn btn-info btn-sm"
-                data-cy="entityDetailsButton"
-              >
-                <fa-icon icon="eye"></fa-icon>
-                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
-              </button>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+<pre>Active: {{ active }}</pre>

@@ -11,7 +11,7 @@ import { TenderiService } from '../service/tenderi.service';
 export class TenderiComponent implements OnInit {
   tenderis?: ITenderi[];
   isLoading = false;
-
+  active = 1;
   constructor(protected tenderiService: TenderiService) {}
 
   loadAll(): void {
