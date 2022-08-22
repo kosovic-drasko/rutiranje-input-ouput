@@ -1,0 +1,21 @@
+{
+  "changelogDate": "20220822204149",
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "sifraPostupka",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "naziv",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Ponude",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}
