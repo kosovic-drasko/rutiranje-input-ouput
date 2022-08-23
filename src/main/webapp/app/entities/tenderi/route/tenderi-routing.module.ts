@@ -13,24 +13,20 @@ const tenderiRoute: Routes = [
     path: '',
     component: TenderiComponent,
     canActivate: [UserRouteAccessService],
-    children: [
-      {
-        path: 'ponude',
-        component: PonudeComponent,
-      },
-      {
-        path: 'postupci',
-        component: PostupciComponent,
-      },
-    ],
+    // children: [
+    //   {
+    //     path: 'ponude',
+    //     component: PonudeComponent,
+    //   },
+    //   {
+    //     path: 'postupci',
+    //     component: PostupciComponent,
+    //   },
+    // ],
   },
   {
-    path: ':id/view',
-    component: TenderiDetailComponent,
-    resolve: {
-      tenderi: TenderiRoutingResolveService,
-    },
-    canActivate: [UserRouteAccessService],
+    path: ':id',
+    component: TenderiComponent,
   },
 ];
 

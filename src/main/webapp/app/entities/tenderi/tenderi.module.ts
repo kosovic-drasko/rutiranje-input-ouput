@@ -10,5 +10,6 @@ import { PostupciModule } from '../postupci/postupci.module';
 @NgModule({
   imports: [SharedModule, TenderiRoutingModule, PonudeModule, SpecifikacijeModule, PostupciModule],
   declarations: [TenderiComponent, TenderiDetailComponent],
+  exports: [TenderiComponent],
 })
 export class TenderiModule {}
